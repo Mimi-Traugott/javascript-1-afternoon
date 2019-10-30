@@ -9,6 +9,7 @@ let myName = "Mimi";
 //Create a variable called myAge that is a number data type
 
 let myAge = 29;
+//^^ just pretend this is true okay????
 
 //////////////////PROBLEM 3////////////////////
 
@@ -35,9 +36,10 @@ let devMountainGoal = null;
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
 
-function greeting(name) {
+function greeting (name) {
   return "Hello, " + name;
 }
+
 
 //////////////////PROBLEM 7////////////////////
 
@@ -53,7 +55,7 @@ let newGreeting = function(name){
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-let groceries = ["apples", "milk", "eggs", "bread"];
+let groceries = ["apples", "milk", "eggs", "bread"]
 
 //////////////////PROBLEM 9////////////////////
 
@@ -62,9 +64,9 @@ let groceries = ["apples", "milk", "eggs", "bread"];
 //name (a string), color (a string), age (a number),
 //and goodBoy (a boolean).
 
-var dog = {
-  name: 'Oliver',
-  color: 'fawn',
+let dog = {
+  name: "Oliver",
+  color: "fawn",
   age: 6,
   goodBoy: true
 }
@@ -83,23 +85,23 @@ let devMountainClassPet = dog.name;
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
-function nameCheck(name) {
-  if(name === 'Steven') {
+
+function nameCheck(name){
+  if(name==='Steven'){
     return 'What is up Steven?'
-  } else if (name === 'Bryan') {
+  } else if (name==='Bryan') {
     return 'Hey Bryan!'
   } else {
-    return 'Cool name, ' + (name)
+    return 'Cool name, ' + name
   }
 }
-
 //////////////////PROBLEM 11////////////////////
 
 // Create a function called add that takes in two parameters
 // that will be numbers.
 // The add function should return the two parameters added together
 
-function add (num1, num2){
+function add (num1, num2) {
   return num1 + num2
 }
 //Now invoke add, passing in the numbers 3 and 4
@@ -118,11 +120,11 @@ let mathSum = add(3, 4)
 
 
 function faveColorFinder(color){
-  if( color === 'red') {
+  if (color==='red') {
     return 'red is a great color'
-  } else if ( color === 'green') {
+  } else if (color==='green'){
     return 'green is a solid favorite color'
-  } else if ( color === 'black') {
+  } else if (color==='black'){
     return 'so trendy'
   } else {
     return 'you need to evaluate your favorite color choice'
@@ -158,7 +160,7 @@ let globalScope = ["duck"];
 let bathroomScope = ["duck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
+let bathtubScope = ["duck", "rubberDuck", "sailorDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
 let pondScope = ["duck", "realDuck"];
